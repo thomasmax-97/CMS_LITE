@@ -52,20 +52,7 @@ include "includes/navigation.php";
 
                 <hr>
             <?php } ?>
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
         <!-- Blog Sidebar Widgets Column -->
         <?php
         include "includes/sidebar.php";
