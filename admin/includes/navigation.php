@@ -11,7 +11,7 @@
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
-            <li><a href="../index.php">HOME SITE</a></li>
+                <li><a href="../index.php">HOME SITE</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -33,14 +33,14 @@
                     <li>
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
-                     <li>
+                    <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#post"><i class="fa fa-fw fa-arrows-v"></i> Posts <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="post" class="collapse">
                             <li>
                                 <a href="./posts.php">View All Posts</a>
                             </li>
                             <li>
-                                <a href="#">Add Post</a>
+                                <a href="posts.php?source=add_post">Add Post</a>
                             </li>
                         </ul>
                     </li>
@@ -48,7 +48,7 @@
                         <a href="categories.php"><i class="fa fa-fw fa-wrench"></i> Categories</a>
                     </li>
 
-                    <li >
+                    <li>
                         <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Comments</a>
                     </li>
                     <li>
@@ -63,7 +63,7 @@
                         </ul>
                     </li>
 
-                     <li>
+                    <li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> Profile </a>
                     </li>
                 </ul>

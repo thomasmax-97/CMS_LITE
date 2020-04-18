@@ -1,4 +1,12 @@
 <?php
+function confirm($result)
+{
+    global $connection;
+    if (!$result) {
+        die("QUERY FAILED " . mysqli_error($connection));
+    }
+}
+
 function insert_categories()
 {
     global $connection;
@@ -16,7 +24,6 @@ function insert_categories()
                 die('QUERY FAILED' . mysqli_error($connection));
             }
         }
-
     }
 }
 
@@ -36,7 +43,6 @@ function findAllCategories()
         echo "<td><a href='categories.php?edit={$cat_id}'>Edit</a></td>";
         echo "</tr>";
     }
-
 }
 
 function deleteCategories()
@@ -48,5 +54,4 @@ function deleteCategories()
         $delete_query = mysqli_query($connection, $query);
         header("Location: categories.php");
     }
-
 }
