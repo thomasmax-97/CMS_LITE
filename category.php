@@ -22,7 +22,7 @@ include "includes/navigation.php";
                 $post_category = $_GET['category'];
             }
 
-            $query = "SELECT * FROM posts";
+            $query = "SELECT * FROM posts WHERE post_category_id = $post_category";
             $select_all_posts_query = mysqli_query($connection, $query);
 
             while ($row = mysqli_fetch_assoc($select_all_posts_query)) {
@@ -31,7 +31,7 @@ include "includes/navigation.php";
                 $post_author = $row['post_author'];
                 $post_date = $row['post_date'];
                 $post_image = $row['post_image'];
-                $post_content = substr($row['post_content'], 0, 50);
+                $post_content = substr($row['post_content'], 0, 50)
             ?>
 
 
